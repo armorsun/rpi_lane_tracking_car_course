@@ -17,6 +17,7 @@ void forward(int speed, float time);
 void left_turn(int degree, float time);
 void right_turn(int degree, float time);
 void backward(int speed, float time);
+void stop();
 
 int main()
 {
