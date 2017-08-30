@@ -13,10 +13,10 @@ int main() {
 	char checkForEscKey = 0;
 	Mat cameraFrame; //store the frame data
 	while (checkForEscKey != 27 && stream.isOpened()) {
-	stream.read(cameraFrame);
-	namedWindow("imgOriginal", CV_WINDOW_NORMAL);
-	imshow("imgOriginal", cameraFrame);
-	checkForEscKey = waitKey(1);
+		stream.read(cameraFrame);
+		namedWindow("imgOriginal", CV_WINDOW_NORMAL);
+		imshow("imgOriginal", cameraFrame);
+		checkForEscKey = waitKey(1);
  	}
  	return 0;
 }
